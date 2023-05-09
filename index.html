@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!--favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!--cargar estilos propios de manera externa-->
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+   
+    <body class="body">
+        <header class="header">
+            <div class="contenedorNav">
+                <div class="contenedorLogo">
+                    <!--rutas absolutas y rutas relativas -->
+                    <img src="./assets/img/codoacodo1.png" alt="Logo de codo a codo">
+                    <h2>Conf Bs.As.</h2>
+                </div>
+               
+                <nav class="navegacion">
+                    <!-- para la proxima clase vamos agrupar las anclas dentro de una lista desordenada-->
+                    <ul class="listaNav">
+                        <li class="itemLista"><a class="linkNav" href="#conferencia">La conferencia </a></li>
+                        <li class="itemLista"><a class="linkNav" href="#oradores">Los oradores</a></li>
+                        <li class="itemLista"><a class="linkNav" href="#lugarFecha">El Lugar y la Fecha</a></li>
+                        <li class="itemLista"><a class="linkNav" href="#formulario">Conviertete en Orador</a></li>
+                        <li class="itemLista"><a class="verde" href="./pages/comprar_tickets.html">Comprar Tickets</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+           
+            <!--contenedor de la imagen de ex aguas argentinas(que la vamos a poner de fondo desde css)-->
+            <section id="conferencia" class="contenedorConferencia">
+                <div class="hijoConferencia">
+                    <h1>Conferencia Bs.As.</h1>
+                    <p class="textoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con
+                        nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet.
+                        Ven a conocer a mienbros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
+                        que tenemos para ti. Te esperamos!</p>
+                    <div class="bconf">
+                        <div class="btnConferencia">
+                            <a class="quiero" href="">Quiero ser orador</a>
+                        </div>
+                        <div class="btnConferencia">
+                            <a class="comprar" href="">Comprar Tickets</a>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+
+        </header>
+         <!--esta es la etiqueta semantica del contenido principal de mi pagina-->
+        <main>
+            <section id="oradores" class="sectionOradores">
+                <!--ETIQUETA CONTENEDORA EN LINEA, HERMANA DEL DIV QUE ES SPAN-->
+                <div class="titulo">
+                    <h4>CONOCE A LOS</h4><br> <h2>ORADORES</h2>
+                </div>
+                
+                <div class="padreCards">
+                    <div class="card">
+                        <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
+                        <div class="cardBody">
+                            <h5 class="javas">JavaScript</h5>
+                            <h5 class="reac">React</h5>
+                            <h3>Steve Jobs</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
+                        <div class="cardBody">
+                            <h5 class="javas">JavaScript</h5>
+                            <h5 class="reac">React</h5>
+                            <h3>Bill Gates</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+                        </div>
+                    </div>    
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                        <div class="cardBody">
+                            <h5 class="negocios">Negocios</h5>
+                            <h5 class="star">Startups</h5>
+                            <h3>Ada Lovelace</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem illo alias dolorem voluptatum, non aliquid nisi fugiat vitae maxime quas est maiores dolor pariatur et?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="lugarFecha">
+                <div class="imgtexto">
+                    <div class="imgtext">
+                        <img src="./assets/img/honolulu.jpg" alt="imagen pantalla dividida">
+                    </div>
+                    <div class="imgtextc">
+                        <h2>Buenos Aires - Octubre</h2>
+                        <p>Buenos Aires es la provincia y localidad más grande del estado de Argetina, en los Estados Unidos.
+                            Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
+                            se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formadu
+                            una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                        <a class="botontxt" href="">Conocé Más</a>
+                    </div>
+                </div>
+            </section>
+            <section id="formulario">
+                <div class="encabezadoform">
+                    <h4><span>CONVIÉRTETE EN UN </span></h4>
+                    <h2>ORADOR</h2>
+                    <h5>Anótate como orador para dar una <span class="linea">charla ignite</span> . Cuéntanos de qué quieres hablar!</h5>
+                </div>
+                <div class="formulario">
+                    <form class="formcontacto">
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <input type="email" class="form-control" placeholder="ejemplo@dominio.com" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="password" class="form-control" placeholder="Contraseña" aria-label="Last name">
+                            </div>
+                          </div>
+                        <div class="row">
+                            <div class="mb-3">
+                                <textarea class="form-control" id="" rows="3" placeholder="Sobre que quieres hablar?" required></textarea>
+                            </div>
+                        </div>
+                        <p>Recuerda incluir un titulo para tu charla.</p>
+                        <!--<div>
+                            <input class="btnform" type="submit" value="Enviar Formulario">
+                            <input class="btnform" type="reset" value="Limpiar Formulario">
+                        </div>-->
+                        <div class="botones">
+                            <div class="btnform">
+                                <a class="enviar" href="">Enviar formulario</a>
+                            </div>
+                            <div class="btnform">
+                                <a class="limpiar" href="">Limpiar formulario</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+       
+         <!--esta es la etiqueta semantica del pie de pagina-->
+        <footer class="footer">
+             <!-- hacer el footer para el miercoles-->
+             <!-- etiqueta semantica del pie de página-->
+            <div class="contenedorPie">
+                <!-- <div class="navegacionPie0">
+                    <a href="">Preguntas frecuentes</a>
+                    <a href="">Contáctanos</a>
+                    <a href="">Prensa</a>
+                    <a href="">Conferencias</a>
+                    <a href="">Terminos y condiciones</a>
+                    <a href="">privacidad</a>
+                    <a href="">Estudiantes</a>
+                </div>-->
+              
+                <nav class="navegacionPie">
+                    <!-- para la proxima clase vamos agrupar las anclas dentro de una lista desordenada-->
+                    <ul class="listaPie">
+                        <li><a class="linkPie" href="">Preguntas frecuentes </a></li>
+                        <li><a class="linkPie" href="">Contáctanos</a></li>
+                        <li><a class="linkPie" href="">Prensa</a></li>
+                        <li><a class="linkPie" href="">Conferencias</a></li>
+                        <li><a class="linkPie" href="">Terminos y condiciones</a></li>
+                        <li><a class="linkPie" href="">Privacidad</a></li>
+                        <li><a class="linkPie" href="">Estudiantes</a></li>
+                        <a href=""><i class="fa-brands fa-whatsapp icon"></i></a>
+                    </ul>
+                    
+                </nav>
+
+
+                
+                
+            
+            </div>
+        </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
